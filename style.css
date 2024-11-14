@@ -115,7 +115,7 @@ nav .logo{
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    background-color: #A5A5A5;
+    background-color: #f6f6f6;
     height: auto;
     padding: 20px 0 ;
 }
@@ -129,73 +129,104 @@ nav .logo{
     justify-content: space-around;
 }
 
-.card {
+.credentialing {
+    --bg-color: #B8F9D3;
+    --bg-color-light: #e2fced;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(184, 249, 211, 0.48);
+  }
+  
+  .card {
     width: 220px;
-    height: 254px;
+    height: 321px;
     background: #fff;
-    position: relative;
-    padding: 20px;
-    display: flex;
-    place-content: center;
-    place-items: center;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
   }
   
-  .card h2 {
-    z-index: 1;
-    color: #000;
-    font-size: 1.5em;
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+      0 24px 46px var(--box-shadow-color);
   }
   
-  .card::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background: linear-gradient(90deg, #F09223, rgba(1,121,156,1));
-    height: 180%;
-    animation: rotBGimg 10s linear infinite;
-    transition: all 0.2s linear;
-  }
-
-  .card:nth-child(1)::before {
-    animation-delay: 0s;
+  .card:hover .overlay {
+    transform: scale(4) translateZ(0);
   }
   
-  .card:nth-child(2)::before {
-    animation-delay: 1s; 
+  .card:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
   }
   
-  .card:nth-child(3)::before {
-    animation-delay: 2s;
-  }
-
-  .card:nth-child(4)::before {
-    animation-delay: 3s;
-  }
-
-  .card:nth-child(5)::before {
-    animation-delay: 4s;
+  .card:hover .circle:after {
+    background: var(--bg-color-light);
   }
   
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
+  .card:hover p {
+    color: var(--text-color-hover);
   }
   
-  .card::after {
-    content: '';
-    position: absolute;
+  .card:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+      0 15px 24px var(--box-shadow-color);
+  }
+  
+  .card p {
+    font-size: 17px;
+    color: #4C5656;
+    margin-top: 30px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }
+  
+  .circle {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
     background: #fff;
-    inset: 5px;
-    border-radius: 15px;
-  }  
+    border: 3px solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+  }
+  
+  .circle:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  
+  .overlay {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 70px;
+    left: 50px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
   
 /* ==================== footer ==================== */
 
