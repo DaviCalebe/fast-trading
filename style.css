@@ -7,13 +7,18 @@
 }
 
 main{
-    margin-top: 9vh;
+    margin-top: 10vh;
     background-color: #fff;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
 }
 
 a{
     text-decoration: none;
+}
+
+h1{
+    font-size: 2rem;
 }
 
 /* ==================== NAVBAR ==================== */
@@ -21,6 +26,7 @@ a{
 header nav{
     position: fixed;
     top: 0;
+    z-index: 1000;
     background-color: #fff;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -89,16 +95,114 @@ nav .logo{
     transition: width 0.3s ease;
 }
 
-
 .nav-buttons ul li a:hover::after{
     width: 100%;
+}
+
+/* MAIN */
+
+.banner{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: #F09223;
+    width: 100%;
+    height: 30rem;
+}
+
+.why-choose-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #A5A5A5;
+    height: auto;
+    padding: 20px 0 ;
+}
+
+/* CARDS */
+
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    justify-content: space-around;
+}
+
+.card {
+    width: 220px;
+    height: 254px;
+    background: #fff;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: #000;
+    font-size: 1.5em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background: linear-gradient(90deg, #F09223, rgba(1,121,156,1));
+    height: 180%;
+    animation: rotBGimg 10s linear infinite;
+    transition: all 0.2s linear;
   }
 
+  .card:nth-child(1)::before {
+    animation-delay: 0s;
+  }
+  
+  .card:nth-child(2)::before {
+    animation-delay: 1s; 
+  }
+  
+  .card:nth-child(3)::before {
+    animation-delay: 2s;
+  }
+
+  .card:nth-child(4)::before {
+    animation-delay: 3s;
+  }
+
+  .card:nth-child(5)::before {
+    animation-delay: 4s;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  
 /* ==================== footer ==================== */
 
 footer{
     background: linear-gradient(90deg, rgba(1,121,156,1) 0%, rgba(29,81,104,1) 100%);;
     border-top: 2px solid #F09223;
+    z-index: 5;
 }
 
 /* footer-orange-line <<<<<<<<<<<<<<<
@@ -182,7 +286,7 @@ footer{
 
 @media (max-width: 1410px) {
     main{
-        margin-top: 16vh;
+        margin-top: 17vh;
     }
     
     header nav{
@@ -198,6 +302,21 @@ footer{
 
     .nav-buttons ul li a{
         color: #fff;
+    }
+
+    .nav-buttons ul li a::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #F09223;
+        transition: width 0.3s ease;
+    }
+    
+    .nav-buttons ul li a:hover::after{
+        width: 100%;
     }
 
     .company-services-links{
