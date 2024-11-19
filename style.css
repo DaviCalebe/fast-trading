@@ -26,7 +26,7 @@ h1{
 header nav{
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000000;
     background-color: #fff;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -130,14 +130,14 @@ nav .logo{
 }
 
 .credentialing {
-    --bg-color: #B8F9D3;
+    --bg-color: #F09223;
     --bg-color-light: #e2fced;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(184, 249, 211, 0.48);
   }
   
   .card {
-    width: 220px;
+    width: 280px;
     height: 321px;
     background: #fff;
     border-radius: 10px;
@@ -214,6 +214,12 @@ nav .logo{
     border-radius: 50%;
     transition: opacity 0.3s ease-out;
   }
+
+  .circle img{
+    z-index: 2000;
+    width: 70px;
+    height: 70px;
+  }
   
   
   .overlay {
@@ -223,7 +229,7 @@ nav .logo{
     border-radius: 50%;
     background: var(--bg-color);
     top: 70px;
-    left: 50px;
+    left: 80px;
     z-index: 0;
     transition: transform 0.3s ease-out;
   }
