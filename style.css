@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     margin-top: 10vh;
     background-color: #fff;
@@ -18,7 +22,8 @@ a{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 /* ==================== NAVBAR ==================== */
@@ -126,6 +131,17 @@ nav .logo{
     border-radius: 50%;
 }
 
+.about{
+    text-align:center;
+    padding: 2rem 0;
+    height: 30rem;
+    background-color: #f6f6f6;
+}
+
+.about p{
+    font-size: 1.5rem;
+}
+
 .why-choose-us{
     display: flex;
     flex-direction: column;
@@ -135,6 +151,32 @@ nav .logo{
     height: auto;
     padding: 20px 0 ;
 }
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.carousel{
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+
+.carousel-lettering{
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.carousel-lettering span{
+    font-size: 4rem;
+}
+
+
 
 /* CARDS */
 
