@@ -111,6 +111,8 @@ nav .logo{
 
 /* MAIN */
 
+/* ================= BANNER ===================== */
+
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -136,6 +138,8 @@ nav .logo{
     border-radius: 50%;
 }
 
+/* ================ ABOUT ================== */
+
 .about{
     text-align:center;
     padding: 2rem 0;
@@ -157,8 +161,58 @@ nav .logo{
     padding-top: 4rem;
 }
 
+.about-grid p, .about-grid div{
+    padding: 2rem;
+}
+
+:root .p1{
+    --i: 1;
+}
+
+:root .p2{
+    --i: 2;
+}
+
+:root .p3{
+    --i: 3;
+}
+
+:root .p4{
+    --i: 4;
+}
+
 .rotating-effect{
-    display: grid;
+    position: relative;
+    top: 10rem;
+    left: 25rem;
+    width: 0vw;
+    height: 0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    animation: anime233 10s infinite linear;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes anime233{
+    0%{
+        transform: perspective(1200px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1200px) rotateY(-360deg);
+    }
+}
+
+.rotate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(10deg) rotateY(calc(var(--i) * calc(360deg / 4))) translateZ(200px);
+}
+
+.rotating-effect img{
+    width: 120px;
 }
 
 .why-choose-us{
@@ -209,8 +263,6 @@ nav .logo{
 }
 
 /* CARDS */
-
-
 
 .credentialing {
     --bg-color: #F09223;
