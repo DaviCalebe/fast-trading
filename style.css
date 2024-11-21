@@ -148,7 +148,6 @@ nav .logo{
 }
 
 .about h1{
-    padding: 2rem 0;
 }
 
 .about p{
@@ -158,11 +157,20 @@ nav .logo{
 .about-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .about-grid p, .about-grid div{
     padding: 2rem;
+}
+
+.fast{
+    display: inline-block;
+    color: #F09223;
+    font-size: 5rem;
+    background-image: linear-gradient(to right, #01799C 40%, #F09223 70%); 
+    -webkit-background-clip: text; 
+    color: transparent; 
 }
 
 :root .p1{
@@ -248,6 +256,7 @@ nav .logo{
 }
 
 .carousel{
+    background-color: #F09223;
     overflow: hidden;
     padding: 30px 0;
     white-space: nowrap;
