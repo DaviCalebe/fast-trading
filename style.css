@@ -15,11 +15,6 @@ main{
     margin-top: 10vh;
     background-color: #fff;
     height: auto;
-    min-height: 450vh;
-}
-
-.interfaces section{
-    height: 90vh;
 }
 
 a{
@@ -83,10 +78,6 @@ nav .logo{
     font-size: 1.3rem;
 }
 
-#services-link{
-    display: none;
-}
-
 .nav-buttons ul li a{
     position: relative;
     display: flex;
@@ -142,8 +133,7 @@ nav .logo{
 
 .about{
     text-align:center;
-    padding: 2rem 0;
-    height: 30rem;
+    padding: 5rem 0;
     background-color: #f6f6f6;
 }
 
@@ -157,7 +147,6 @@ nav .logo{
 .about-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 2rem;
 }
 
 .about-grid p, .about-grid div{
@@ -230,7 +219,7 @@ nav .logo{
     gap: 4rem;
     background-color: #f6f6f6;
     height: auto;
-    padding: 20px 0 ;
+    padding: 5rem 0 ;
 }
 
 .advantages{
@@ -245,31 +234,6 @@ nav .logo{
 .card3 { grid-area: 1 / 5 / 2 / 6; }
 .card4 { grid-area: 2 / 2 / 3 / 3; }
 .card5 { grid-area: 2 / 4 / 3 / 5; }
-
-@keyframes slide{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
-
-.carousel{
-    background-color: #F09223;
-    overflow: hidden;
-    padding: 30px 0;
-    white-space: nowrap;
-}
-
-.carousel-lettering{
-    display: inline-block;
-    animation: 15s slide infinite linear;
-}
-
-.carousel-lettering span{
-    font-size: 4rem;
-}
 
 /* CARDS */
 
@@ -467,7 +431,6 @@ nav .logo{
 .copyright-footer{
     height: 49px;
     width: 100%;
-    margin-bottom: 25px;
     display: flex;
 }
 
@@ -476,9 +439,6 @@ nav .logo{
     justify-content: center;
     font-size: 15px;
 }
-
-
-
 
 /* Responsivo */
 
@@ -521,13 +481,6 @@ nav .logo{
         width: 100%;
     }
 
-    .company-services-links{
-        display: none;
-    }
-
-    #services-link{
-        display: flex;
-    }
 }
 
 /* Responsivo footer */
