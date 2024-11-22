@@ -15,7 +15,7 @@ main{
     margin-top: 10vh;
     background-color: #fff;
     height: auto;
-    min-height: 90vh;
+    min-height: 450vh;
 }
 
 .interfaces section{
@@ -381,7 +381,7 @@ nav .logo{
   
 /* ==================== footer ==================== */
 
-footer{
+.complete-footer{
     background: linear-gradient(90deg, rgba(1,121,156,1) 0%, rgba(29,81,104,1) 100%);;
     border-top: 2px solid #F09223;
     z-index: 5;
@@ -451,7 +451,7 @@ footer{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #cecdcd;
+    color: #F09223;
     padding-left: 5px;
 }
 
@@ -463,6 +463,22 @@ footer{
     width: 100%;
     height: 100%;
 }
+
+.copyright-footer{
+    height: 49px;
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.copyright-footer {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+
 
 /* Responsivo */
 
@@ -514,12 +530,25 @@ footer{
     }
 }
 
+/* Responsivo footer */
+
 @media (max-width: 800px) {
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
+@media (max-width:650px) {
+
+    .footer-col-map iframe{
+        width: 100%;
+        min-height: 500px;
+        height: 100%;
+    }
+
+}
+
+
 @media (max-width:600px) {
     .footer-col{
         width: 100%;
