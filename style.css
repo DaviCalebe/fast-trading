@@ -186,7 +186,6 @@ nav .logo{
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 
 .banner-info-1, .banner-info-2{
@@ -512,8 +511,8 @@ nav .logo{
 
 .rotating-effect{
     position: relative;
-    top: 10rem;
-    left: 25rem;
+    top: 40%;
+    left: 50%;
     width: 0vw;
     height: 0;
     transform-style: preserve-3d;
@@ -606,6 +605,7 @@ nav .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 4rem;
     background-color: #f6f6f6;
     height: auto;
@@ -625,16 +625,7 @@ nav .logo{
 .card4 { grid-area: 2 / 2 / 3 / 3; }
 .card5 { grid-area: 2 / 4 / 3 / 5; }
 
-@media (max-width: 1440px) {
-    .advantages {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
 
-}
 
 /* CARDS */
 
@@ -837,7 +828,23 @@ nav .logo{
     font-size: 15px;
 }
 
-/* Responsivo */
+/* =================== RESPONSIVITY ===================== */
+
+@media (max-width: 1440px) {
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-grid{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
 
 @media (max-width: 1410px) {
     main{
