@@ -104,7 +104,6 @@ nav .logo{
 
 /* ================= BANNER ===================== */
 
-/* Estilos do Container Principal */
 .banner-container {
     display: flex;
     align-items: center;
@@ -115,16 +114,12 @@ nav .logo{
     overflow: hidden;
   }
   
-
-/* Estilo do Banner (imagem de fundo) */
 .banner {
     background: url('./assets/fundo.png') no-repeat center/cover;
     width: 100%;
-    /* Faz o banner ocupar mais espaço para rolagem */
     height: 100%;
     position: absolute;
     right: -300px;
-    /* Puxa o banner 300px para a direita */
     z-index: 1;
 }
 
@@ -151,7 +146,6 @@ nav .logo{
     left: 100px;
   }
   
-  /* Cada slide */
   .banner-slide {
     display: flex;
     align-items: center;
@@ -161,7 +155,6 @@ nav .logo{
     line-height: 1.2;
   }
 
-/* Círculo Branco com Sombra */
 .banner-circle {
     position: relative;
     width: 527px;
@@ -176,8 +169,8 @@ nav .logo{
 
 .banner-circle img {
     width: 120%;
-    opacity: 1; /* Começa visível */
-    transition: opacity 0.5s ease; /* Adiciona uma transição suave de opacidade */
+    opacity: 1;
+    transition: opacity 0.5s ease;
     will-change: transform, opacity;
     animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(.25, .46, .45, .94) 0.5s forwards;
 }
@@ -189,7 +182,7 @@ nav .logo{
 }
 
 .banner-info-1, .banner-info-2{
-    overflow: hidden; /* Oculta o texto fora do contêiner */
+    overflow: hidden;
 }
 
 .banner-info h3 {
@@ -197,57 +190,35 @@ nav .logo{
     color: white;
     font-size: 45px;
     width: 680px;
-    /* Largura máxima permitida antes de quebrar */
     max-width: 100%;
-    /* Garante que se ajuste em layouts menores */
     word-wrap: break-word;
-    /* Permite a quebra de palavras longas */
     white-space: normal;
-    /* Garante que o texto quebre linhas automaticamente */
     text-align: left;
-    /* Alinhamento opcional */
     animation: txt-in linear .4s 1s forwards;
-
     transform: translateY(200px);
-
-
 }
 
 .banner-info p {
     color: white;
     font-size: 22px;
     width: 500px;
-    /* Largura máxima permitida antes de quebrar */
     max-width: 100%;
-    /* Garante que se ajuste em layouts menores */
     word-wrap: break-word;
-    /* Permite a quebra de palavras longas */
     white-space: normal;
-    /* Garante que o texto quebre linhas automaticamente */
     text-align: left;
-    /* Alinhamento opcional */
     animation: txt-in linear .4s 1s forwards;
-
     transform: translateY(-120px);
 }
 
 .banner-info a {
     display: inline-block;
-    /* Ajusta ao tamanho do texto */
     background-color: white;
-    /* Fundo branco */
     color: #F09223;
-    /* Cor do texto */
     padding: 15px 20px;
-    /* Espaçamento interno do botão */
     border-radius: 30px;
-    /* Bordas arredondadas */
     font-size: 16px;
-    /* Tamanho da fonte */
     font-weight: bold;
-    /* Destaca o texto */
     text-decoration: none;
-    /* Remove sublinhado */
     text-align: center;
     /* Centraliza o texto */
     max-width: max-content;
@@ -351,116 +322,6 @@ nav .logo{
         transform-origin: 50% 50%;
         opacity: 1;
     }
-}
-
-
-/* ================= RESPONSIVO BANNER ===================== */
-
-@media (max-width: 1410px) {
-
-    .banner-circle {
-        width: 500px;
-        height: 500px;
-
-    }
-
-    .banner-circle img {
-        width: 115%;
-    }
-
-    .banner-info h3 {
-        font-size: 40px;
-        width: 500px;
-        /* Largura máxima permitida antes de quebrar */
-
-    }
-
-    .banner-info p {
-        font-size: 22px;
-        width: 350px;
-        /* Largura máxima permitida antes de quebrar */
-
-    }
-
-
-
-}
-
-
-@media (max-width: 1100px) {
-
-    .banner-container {
-        height: auto;
-    }
-
-
-    .banner {
-        background: none;
-    }
-
-    .banner-content {
-        left: 0;
-    }
-
-    .banner-slide {
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-
-    .banner-info {
-        background-color: #F09223;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0px;
-    }
-
-    .banner-info h3 {
-        color: white;
-        font-size: 30px;
-        width: 100%;
-        /* Largura máxima permitida antes de quebrar */
-
-        text-align: center;
-        /* Alinhamento opcional */
-    }
-
-    .banner-info p {
-        color: white;
-        font-size: 15px;
-        width: 100%;
-        word-wrap: break-word;
-        white-space: normal;
-        text-align: center;
-    }
-
-    .arrow {
-        top: 40%;
-    }
-
-}
-
-@media (max-width: 550px) {
-
-    .banner-circle {
-        width: 300px;
-        height: 300px;
-
-    }
-
-    .banner-circle img {
-        width: 115%;
-    }
-
-    .banner-info h3 {
-        font-size: 25px;
-    }
-
-    .arrow {
-        top: 30%;
-    }
-
 }
 
 /* ================ ABOUT THE COMPANY ================== */
@@ -831,22 +692,10 @@ nav .logo{
 /* =================== RESPONSIVITY ===================== */
 
 @media (max-width: 1440px) {
-    .advantages {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    html{
+        scroll-padding-top: 17vh;
     }
-
-    .about-grid{
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
-    }
-
-}
-
-@media (max-width: 1410px) {
+    
     main{
         margin-top: 17vh;
     }
@@ -885,9 +734,98 @@ nav .logo{
         width: 100%;
     }
 
+    .banner-circle {
+        width: 500px;
+        height: 500px;
+
+    }
+
+    .banner-circle img {
+        width: 115%;
+    }
+
+    .banner-info h3 {
+        font-size: 40px;
+        width: 500px;
+        /* Largura máxima permitida antes de quebrar */
+
+    }
+
+    .banner-info p {
+        font-size: 22px;
+        width: 350px;
+        /* Largura máxima permitida antes de quebrar */
+
+    }
+
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-grid{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
 }
 
-/* Responsivo footer */
+@media (max-width: 1100px) {
+
+    .banner-container {
+        height: auto;
+    }
+
+
+    .banner {
+        background: none;
+    }
+
+    .banner-content {
+        left: 0;
+    }
+
+    .banner-slide {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .banner-info {
+        background-color: #F09223;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .banner-info h3 {
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        /* Largura máxima permitida antes de quebrar */
+
+        text-align: center;
+        /* Alinhamento opcional */
+    }
+
+    .banner-info p {
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        word-wrap: break-word;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .arrow {
+        top: 40%;
+    }
+
+}
 
 @media (max-width: 800px) {
     .footer-col{
@@ -905,9 +843,30 @@ nav .logo{
 
 }
 
-
 @media (max-width:600px) {
     .footer-col{
         width: 100%;
     }
+}
+
+@media (max-width: 550px) {
+
+    .banner-circle {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .banner-circle img {
+        width: 115%;
+    }
+
+    .banner-info h3 {
+        font-size: 25px;
+    }
+
+    .arrow {
+        top: 30%;
+    }
+
 }
