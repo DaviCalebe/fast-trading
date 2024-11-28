@@ -436,14 +436,9 @@ nav .logo{
 }
 
 .services-select button.active{
-    padding: 0.5rem;
-    font-size: 2rem;
     background-color: whitesmoke;
     color: #01799C;
-    border: none;
-    border-radius: 15px;
     transform: scale(1.05);
-    cursor: pointer;
 }
 
 .services-description{
@@ -711,6 +706,9 @@ nav .logo{
         background-color: rgba(1,121,156,1);
     }
 
+    nav .logo img{
+        min-width: 340px;
+    }
     .nav-buttons ul li{
         padding: 0.5rem;
     }
@@ -733,6 +731,7 @@ nav .logo{
     .nav-buttons ul li a:hover::after{
         width: 100%;
     }
+
 
     .banner-circle {
         width: 500px;
@@ -774,6 +773,9 @@ nav .logo{
 }
 
 @media (max-width: 1100px) {
+    p{
+        font-size: 15px;
+    }
 
     .banner-container {
         height: auto;
@@ -791,7 +793,10 @@ nav .logo{
     .banner-slide {
         flex-direction: column;
         justify-content: space-between;
+    }
 
+    .banner-circle{
+        margin: 1rem 0;
     }
 
     .banner-info {
@@ -806,15 +811,11 @@ nav .logo{
         color: white;
         font-size: 30px;
         width: 100%;
-        /* Largura máxima permitida antes de quebrar */
-
         text-align: center;
-        /* Alinhamento opcional */
     }
 
     .banner-info p {
         color: white;
-        font-size: 15px;
         width: 100%;
         word-wrap: break-word;
         white-space: normal;
@@ -833,6 +834,7 @@ nav .logo{
         margin-bottom: 30px;
     }
 }
+
 @media (max-width:650px) {
 
     .footer-col-map iframe{
@@ -850,19 +852,17 @@ nav .logo{
 }
 
 @media (max-width: 550px) {
+    h3 {
+        font-size: 25px;
+    }
 
     .banner-circle {
         width: 300px;
         height: 300px;
-
     }
 
     .banner-circle img {
         width: 115%;
-    }
-
-    .banner-info h3 {
-        font-size: 25px;
     }
 
     .arrow {
