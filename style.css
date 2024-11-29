@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.language-selector {
+    position: relative;
+    display: inline-block;
+  }
+
+  .language-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Poppins;
+    transition: all 0.3s ease;
+  }
+
+  .language-button img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .language-button .globe{
+    display: none;
+  }
+
+  .language-button .globe2{
+    display: block;
+  }
+
+
+
+  .arrow-language {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-language.open {
+    transform: rotate(180deg);
+  }
+
+  .language-options {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 150px;
+    z-index: 10;
+  }
+
+  .language-options button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .language-options button:hover {
+    background: #f0f0f0;
+  }
+
+
 *{
     font-family: 'Poppins';
     margin: 0;
@@ -731,6 +803,29 @@ nav .logo {
     .nav-buttons ul li a:hover::after{
         width: 100%;
     }
+
+    .language-button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: none;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: Poppins;
+        transition: all 0.3s ease;
+      }
+    
+      .language-button .globe{
+        display: block;
+      }
+    
+      .language-button .globe2{
+        display: none;
+      }
 
     .banner-circle {
         width: 500px;

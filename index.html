@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,35 @@
             </a>
             <div class="nav-buttons">
                 <ul>
-                  <li><a href="#about">Empresa</a></li>
-                  <li id="services-link"><a href="#services">Serviços</a></li>
-                  <li><a href="#contact">Contato</a></li>
+                    <li><a id="companies_nav" href="#about">Empresa</a></li>
+                    <li><a id="services_nav" href="#services">Serviços</a></li>
+                    <li><a id="contact_nav" href="#contact">Contato</a></li>
+
+                    <li>
+
+                        <div class="language-selector">
+                            <button class="language-button" id="language-button" onclick="toggleOptions()">
+                                <img src="./assets/internet.png" alt="Globe" class="globe">
+                                <img src="./assets/internet2.png" alt="Globe" class="globe2">
+
+                                <span id="selected-language">Language</span>
+                                <span class="arrow-language" id="arrow-language">▼</span>
+                            </button>
+                            <div class="language-options" id="language-options">
+                                <button onclick="setLanguage('Português')">Português</button>
+                                <button onclick="setLanguage('English')">English</button>
+                            </div>
+                        </div>
+
+                    </li>
+
                 </ul>
-              
+
                 <div class="toggle-container">
-                    <!--MUDANÇA DE IDIOMAS-->
+
                 </div>
-              </div>
-                </ul>
             </div>
+
         </nav>
     </header>
 
@@ -45,15 +64,21 @@
                         <img src="./assets/caminhao_carregamento.png" alt="Caminhão Carregamento" />
                     </div>
                     <div class="banner-info">
-                        <div class="banner-info-1">
-                            <h3>Velocidade e Confiabilidade na Proporção Ideal.</h3>
+                        <div class="banner_info-1">
+
+                            <h3 id="banner_title_1">Velocidade e Confiabilidade na Proporção Ideal.</h3>
+
                         </div>
 
                         <div class="banner-info-2">
-                            <p>Oferecemos a solução perfeita para a sua operação.</p>
+
+                            <p id="banner_subtitle_1">Oferecemos a solução perfeita para a sua operação.</p>
+
                         </div>
 
-                        <a href="#aaa">Solicite um orçamento</a>
+                        <a href="https://api.whatsapp.com/send?phone=5581981656805&amp;text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
+                            target="_blank" id="banner_button_1">Solicite um orçamento</a>
+
                     </div>
                 </div>
                 <!-- Página 2 -->
@@ -63,14 +88,15 @@
                     </div>
                     <div class="banner-info">
                         <div class="banner-info-1">
-                            <h3>Equipamentos Modernos para Suas Necessidades.</h3>
+                            <h3 id="banner_title_2">Equipamentos Modernos para Suas Necessidades.</h3>
                         </div>
 
                         <div class="banner-info-2">
-                            <p>Aumente a produtividade com tecnologia avançada.</p>
+                            <p id="banner_subtitle_2">Aumente a produtividade com tecnologia avançada.</p>
                         </div>
 
-                        <a href="#aaa">Saiba mais</a>
+                        <a href="https://api.whatsapp.com/send?phone=5581981656805&amp;text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
+                            target="_blank" id="banner_button_2">Saiba mais</a>
                     </div>
                 </div>
                 <!-- Página 3 -->
@@ -81,14 +107,15 @@
                     <div class="banner-info">
 
                         <div class="banner-info-1">
-                            <h3>Entrega Rápida e Segura.</h3>
+                            <h3 id="banner_title_3">Entrega Rápida e Segura.</h3>
                         </div>
 
                         <div class="banner-info-2">
-                            <p>Chegamos ao seu destino no prazo certo.</p>
+                            <p id="banner_subtitle_3">Chegamos ao seu destino no prazo certo.</p>
                         </div>
 
-                        <a href="#aaa">Confira nossas soluções</a>
+                        <a href="https://api.whatsapp.com/send?phone=5581981656805&amp;text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
+                            target="_blank" id="banner_button_3">Confira nossas soluções</a>
                     </div>
                 </div>
             </div>
@@ -99,12 +126,18 @@
 
         <section id="about" class="about">
 
-            <h1>O que é a<br><span class="fast">FAST?</span></h1>
+            <h1 id="About_title">O que é a<br><span class="fast">FAST?</span></h1>
 
             <div class="about-grid">
 
-                <p>
-                    A <strong>Fast</strong> é especializada em <strong>importação e exportação</strong>, oferecendo soluções logísticas eficientes e personalizadas. Com uma equipe qualificada, garantimos serviços <strong>agéis</strong>, <strong>seguros</strong> e realizados com <strong>transparência, experiência e agilidade</strong>, atendendo às necessidades de nossos clientes no comércio internacional. <br> Com o objetivo de ser uma referência no mercado global, a <strong>Fast</strong> constrói relações de confiança e oferece <strong>soluções logísticas</strong> inovadoras, superando as expectativas e facilitando a internacionalização dos negócios.
+                <p id="text_about">
+                    A <strong>Fast</strong> é especializada em <strong>importação e exportação</strong>, oferecendo
+                    soluções logísticas eficientes e personalizadas. Com uma equipe qualificada, garantimos serviços
+                    <strong>agéis</strong>, <strong>seguros</strong> e realizados com <strong>transparência, experiência
+                    e agilidade</strong>, atendendo às necessidades de nossos clientes no comércio internacional.
+                    <br> Com o objetivo de ser uma referência no mercado global, a <strong>Fast</strong> constrói
+                    relações de confiança e oferece <strong>soluções logísticas</strong> inovadoras, superando as
+                    expectativas e facilitando a internacionalização dos negócios.
                 </p>
 
                 <div class="rotating-effect">
@@ -114,26 +147,26 @@
                     <img src="./assets/delivery-type-1.svg" alt="" class="rotate p4">
                 </div>
             </div>
-            
-            </section>
-        
-            <section id="services" class="services">
-                <div class="title">
-                    <h1>Nossos Serviços</h1>
-                </div>
 
-                <div class="services-select">
-                    <button class="service" data-service="consulting">Consultoria</button>
-                    <button class="service" data-service="import">Importação</button>
-                    <button class="service" data-service="export">Exportação</button>
-                    <button class="service" data-service="customs">Despacho Aduaneiro</button>
-                </div>
-            
-                <div id="description" class="services-description">
-                    <span>Selecione um serviço para ver a descrição.</span>
-                </div>
-            </section>
-            
+        </section>
+
+        <section id="services" class="services">
+            <div class="title">
+                <h1>Nossos Serviços</h1>
+            </div>
+
+            <div class="services-select">
+                <button class="service" data-service="consulting">Consultoria</button>
+                <button class="service" data-service="import">Importação</button>
+                <button class="service" data-service="export">Exportação</button>
+                <button class="service" data-service="customs">Despacho Aduaneiro</button>
+            </div>
+
+            <div id="description" class="services-description">
+                <span>Selecione um serviço para ver a descrição.</span>
+            </div>
+        </section>
+
 
         <section id="why-choose-us" class="why-choose-us">
             <h1>Por que a Fast é a melhor escolha?</h1>
@@ -142,51 +175,51 @@
 
                 <div class="body card1">
                     <a class="card credentialing">
-                         <div class="overlay"></div>
-                      <div class="circle">
-                        <img src="./assets/cost-optimization.svg" alt="">
-                      </div>
-                      <p>Otimização de Custo</p>
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img src="./assets/cost-optimization.svg" alt="">
+                        </div>
+                        <p>Otimização de Custo</p>
                     </a>
                 </div>
 
                 <div class="body card2">
                     <a class="card credentialing">
-                         <div class="overlay"></div>
-                      <div class="circle">
-                        <img src="./assets/consultancy.svg" alt="">
-                      </div>
-                      <p>Consultoria</p>
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img src="./assets/consultancy.svg" alt="">
+                        </div>
+                        <p>Consultoria</p>
                     </a>
                 </div>
 
                 <div class="body card3">
                     <a class="card credentialing">
-                         <div class="overlay"></div>
-                      <div class="circle">
-                        <img src="./assets/iso-9001.svg" alt="">
-                      </div>
-                      <p>ISO 9001</p>
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img src="./assets/iso-9001.svg" alt="">
+                        </div>
+                        <p>ISO 9001</p>
                     </a>
                 </div>
 
                 <div class="body card4">
                     <a class="card credentialing">
-                         <div class="overlay"></div>
-                      <div class="circle">
-                        <img src="./assets/traffic-light.svg" alt="">
-                      </div>
-                      <p>Grande índice de parametrização de canal verde</p>
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img src="./assets/traffic-light.svg" alt="">
+                        </div>
+                        <p>Grande índice de parametrização de canal verde</p>
                     </a>
                 </div>
 
                 <div class="body card5">
                     <a class="card credentialing">
-                         <div class="overlay"></div>
-                      <div class="circle">
-                        <img src="./assets/taxes.svg" alt="">
-                      </div>
-                      <p>Entendimento de tributos</p>
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img src="./assets/taxes.svg" alt="">
+                        </div>
+                        <p>Entendimento de tributos</p>
                     </a>
                 </div>
 
@@ -247,7 +280,7 @@
                         <ul>
                             <li>
                                 <p class="subtopic-footer">Telefone</p>
-                            
+
                                 <a class="number-footer"
                                     href="https://api.whatsapp.com/send?phone=5581982631571&amp;text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
                                     target="_blank" rel="noreferrer" title="Contato via Whatsapp"> +55 (81) 8263-1571
@@ -271,7 +304,7 @@
 
         <div class="copyright-footer">
 
-            <p> © 2024 - Fast Trading  - Todos os direitos reservados. </p>
+            <p> © 2024 - Fast Trading - Todos os direitos reservados. </p>
 
         </div>
 
@@ -280,4 +313,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

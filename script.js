@@ -47,7 +47,7 @@ serviceTitles.forEach(title => {
   title.addEventListener('click', () => {
     // Get the value of the 'data-service' attribute from the clicked title
     const serviceId = title.getAttribute('data-service');
-    
+
     // Update the description in the span
     descriptionSpan.textContent = services[serviceId] || "Description not available.";
   });
@@ -61,11 +61,140 @@ const buttons = document.querySelectorAll('.service');
 
 // Adiciona um evento de clique para cada botão
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove a classe 'active' de todos os botões
-        buttons.forEach(btn => btn.classList.remove('active'));
-        
-        // Adiciona a classe 'active' ao botão clicado
-        button.classList.add('active');
-    });
+  button.addEventListener('click', () => {
+    // Remove a classe 'active' de todos os botões
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Adiciona a classe 'active' ao botão clicado
+    button.classList.add('active');
+  });
+});
+
+
+/* =-=-=-=-=-=-=-=-=-= TRANSLATE WEB SITE  =-=-=-=-=-=-=-=-=-= */
+
+
+/* =-=-=-= WEBSITE ELEMENTS =-=-=-= */
+
+//Navbar
+const companies_nav = document.getElementById('companies_nav');
+const services_nav = document.getElementById('services_nav');
+const contact_nav = document.getElementById('contact_nav');
+
+//Banner pag 1
+const banner_title_1 = document.getElementById('banner_title_1');
+const banner_subtitle_1 = document.getElementById('banner_subtitle_1');
+const banner_button_1 = document.getElementById('banner_button_1');
+
+//Banner pag 2
+const banner_title_2 = document.getElementById('banner_title_2');
+const banner_subtitle_2 = document.getElementById('banner_subtitle_2');
+const banner_button_2 = document.getElementById('banner_button_2');
+
+//Banner pag 3
+const banner_title_3 = document.getElementById('banner_title_3');
+const banner_subtitle_3 = document.getElementById('banner_subtitle_3');
+const banner_button_3 = document.getElementById('banner_button_3');
+
+//About
+const About_title = document.getElementById('About_title');
+const text_about = document.getElementById('text_about');
+
+
+
+function toggleOptions() {
+  const options = document.getElementById('language-options');
+  const arrowLanguage = document.getElementById('arrow-language');
+
+  // Alterna a exibição do menu e anima a seta
+  if (options.style.display === 'block') {
+    options.style.display = 'none';
+    arrowLanguage.classList.remove('open');
+  } else {
+    options.style.display = 'block';
+    arrowLanguage.classList.add('open');
+  }
+}
+
+function setLanguage(language) {
+  const languageButton = document.getElementById('selected-language');
+  const arrowLanguage = document.getElementById('arrow-language');
+  languageButton.textContent = language;
+
+  // Exibe o alert correspondente
+  if (language === 'Português') {
+
+    //Navbar
+    companies_nav.textContent = "Empresa";
+    services_nav.textContent = "Serviços";
+    contact_nav.textContent = "Contato";
+
+    //Banner pag 1
+    banner_title_1.textContent = "Velocidade e Confiabilidade na Proporção Ideal.";
+    banner_subtitle_1.textContent = "Oferecemos a solução perfeita para a sua operação.";
+    banner_button_1.textContent = "Solicite um orçamento";
+
+    //Banner pag 2
+    banner_title_2.textContent = "Equipamentos Modernos para Suas Necessidades.";
+    banner_subtitle_2.textContent = "Aumente a produtividade com tecnologia avançada.";
+    banner_button_2.textContent = "Saiba mais";
+
+    //Banner pag 3
+    banner_title_3.textContent = "Entrega Rápida e Segura.";
+    banner_subtitle_3.textContent = "Chegamos ao seu destino no prazo certo.";
+    banner_button_3.textContent = "Confira nossas soluções";
+
+    //About
+    About_title.innerHTML = "O que é a<br><span class=fast >FAST?</span>";
+
+    text_about.innerHTML = "A <strong>Fast</strong> é especializada em <strong>importação e exportação</strong>, oferecendo soluções logísticas eficientes e personalizadas. Com uma equipe qualificada, garantimos serviços <strong>agéis</strong>, <strong>seguros</strong> e realizados com <strong>transparência, experiência e agilidade</strong>, atendendo às necessidades de nossos clientes no comércio internacional. <br> Com o objetivo de ser uma referência no mercado global, a <strong>Fast</strong> constrói relações de confiança e oferece <strong>soluções logísticas</strong> inovadoras, superando as expectativas e facilitando a internacionalização dos negócios.";
+
+
+
+  } else if (language === 'English') {
+
+    //Navbar
+    companies_nav.textContent = " Companises";
+    services_nav.textContent = "Services";
+    contact_nav.textContent = "Contact";
+
+    //Banner pag 1
+    banner_title_1.textContent = "Speed ​​and Reliability in Ideal Proportion.";
+    banner_subtitle_1.textContent = "We offer the perfect solution for your operation.";
+    banner_button_1.textContent = "Request a quote";
+
+    //Banner pag 2
+    banner_title_2.textContent = "Modern Equipment for Your Needs.";
+    banner_subtitle_2.textContent = "ncrease productivity with advanced technology.";
+    banner_button_2.textContent = "Learn more";
+
+    //Banner pag 3
+    banner_title_3.textContent = "Fast and Secure Delivery.";
+    banner_subtitle_3.textContent = "We arrived at your destination on time.";
+    banner_button_3.textContent = "Check out our solutions";
+
+    //About
+    About_title.innerHTML = "What is<br><span class=fast >FAST?</span>";
+    
+    text_about.innerHTML = "<strong>Fast</strong> specializes in <strong>import and export</strong>, offering efficient and personalized logistics solutions. With a qualified team, we guarantee <strong>agile</strong>, <strong>safe</strong> services carried out with <strong>transparency, experience and agility</strong>, meeting the needs of our customers in international trade. <br> With the aim of being a reference in the global market, <strong>Fast</strong> builds relationships of trust and offers innovative <strong>logistics solutions</strong>, exceeding expectations and facilitating the internationalization of business.";
+
+
+  }
+
+  // Fecha o menu e ajusta a seta
+  const options = document.getElementById('language-options');
+  options.style.display = 'none';
+  arrowLanguage.classList.remove('open');
+}
+
+// Fechar o menu ao clicar fora
+document.addEventListener('click', function (event) {
+  const options = document.getElementById('language-options');
+  const button = document.querySelector('.language-button');
+  const arrowLanguage = document.getElementById('arrow-language');
+
+  if (!button.contains(event.target) && !options.contains(event.target)) {
+    options.style.display = 'none';
+    arrowLanguage.classList.remove('open');
+  }
 });
