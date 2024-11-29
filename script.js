@@ -116,6 +116,17 @@ const why_choose_us_card_3 = document.getElementById('why_choose_us_card_3');
 const why_choose_us_card_4 = document.getElementById('why_choose_us_card_4');
 const why_choose_us_card_5 = document.getElementById('why_choose_us_card_5');
 
+//Footer Contact
+const footer_title_1 = document.getElementById('footer_title_1');
+const footer_subtitle_1 = document.getElementById('footer_subtitle_1');
+const footer_title_2 = document.getElementById('footer_title_2');
+const footer_subtitle_2 = document.getElementById('footer_subtitle_2');
+const footer_title_3 = document.getElementById('footer_title_3');
+const footer_subtitle_3 = document.getElementById('footer_subtitle_3');
+const copyright_txt = document.getElementById('copyright_txt');
+
+
+
 
 
 
@@ -191,6 +202,17 @@ function setLanguage(language) {
     why_choose_us_card_5.textContent = "Entendimento de tributos";
 
 
+    //Footer Contact
+    footer_title_1.textContent = "Informações de Contato";
+    footer_subtitle_1.textContent = "Endereço";
+    footer_title_2.textContent = "Contato Comercial";
+    footer_subtitle_2.textContent = "Telefone";
+    footer_title_3.textContent = "Contato Financeiro";
+    footer_subtitle_3.textContent = "Telefone";
+    copyright_txt.textContent = "© 2024 - Fast Trading - Todos os direitos reservados.";
+    
+
+
 
 
   } else if (language === 'English') {
@@ -239,7 +261,6 @@ function setLanguage(language) {
       customs: "Customs clearance is the set of legal and bureaucratic procedures necessary for the release of goods through a country's customs, both for import and export. This process involves the fiscal classification of goods, the payment of taxes and fees, and the compliance with international and local trade standards. Customs clearance aims to ensure that goods comply with all legal requirements for circulation in the market."
     };
 
-
     //why choose us
     why_choose_us_title.textContent = "Why is Fast the best choice?";
     why_choose_us_card_1.textContent = "Cost Optimization";
@@ -247,6 +268,16 @@ function setLanguage(language) {
     why_choose_us_card_3.textContent = "ISO 9001";
     why_choose_us_card_4.textContent = "Large green channel parameterization index";
     why_choose_us_card_5.textContent = "Understanding taxes";
+
+    //Footer Contact
+        //Footer Contact
+        footer_title_1.textContent = "Contact Information";
+        footer_subtitle_1.textContent = "Address";
+        footer_title_2.textContent = "Business Contact";
+        footer_subtitle_2.textContent = "Phone";
+        footer_title_3.textContent = "Financial Contact";
+        footer_subtitle_3.textContent = "Phone";
+        copyright_txt.textContent = "© 2024 - Fast Trading - All rights reserved.";
 
 
 
