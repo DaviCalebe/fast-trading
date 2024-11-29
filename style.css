@@ -1070,3 +1070,13 @@ nav .logo {
     }
 
 }
+
+@media (max-width: 1440px) and (max-height: 1224px){
+    header nav{
+        height: auto;
+    }
+    
+    nav .logo img{
+        max-width: 35%;
+    }
+}
