@@ -999,6 +999,17 @@ nav .logo img {
         width: 50%;
         margin-bottom: 30px;
     }
+
+    .banner-container .arrow {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .banner-container:hover .arrow {
+        opacity: 1;
+    }
+    
+    
 }
 
 @media (max-width:650px) {

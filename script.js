@@ -15,15 +15,30 @@ function updateCarousel() {
 leftArrow.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop para o final
   updateCarousel();
+  resetAutoSlide(); // Reinicia o temporizador ao clicar
 });
 
 rightArrow.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slides.length; // Loop para o início
   updateCarousel();
+  resetAutoSlide(); // Reinicia o temporizador ao clicar
 });
 
 // Inicializa o carrossel
-updateCarousel();
+// Função para mudar automaticamente a cada 5 segundos
+let autoSlide = setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length; // Passa para a próxima página
+  updateCarousel();
+}, 5000); // 5000ms = 5 segundos
+
+// Função para reiniciar o temporizador de mudança automática
+function resetAutoSlide() {
+  clearInterval(autoSlide); // Para o temporizador atual
+  autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length; // Passa para a próxima página
+      updateCarousel();
+  }, 5000);
+}
 
 
 
