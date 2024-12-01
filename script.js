@@ -184,8 +184,8 @@ function setLanguage(language) {
     banner_button_2.textContent = "Saiba mais";
 
     //Banner pag 3
-    banner_title_3.textContent = "Entrega Rápida e Segura.";
-    banner_subtitle_3.textContent = "Chegamos ao seu destino no prazo certo.";
+    banner_title_3.textContent = "Soluções Globais em Comércio Exterior.";
+    banner_subtitle_3.textContent = "Conectamos sua empresa ao mundo com eficiência, agilidade e confiança.";
     banner_button_3.textContent = "Confira nossas soluções";
 
     //About
@@ -248,8 +248,8 @@ function setLanguage(language) {
     banner_button_2.textContent = "Learn more";
 
     //Banner pag 3
-    banner_title_3.textContent = "Fast and Secure Delivery.";
-    banner_subtitle_3.textContent = "We arrived at your destination on time.";
+    banner_title_3.textContent = "Global Solutions in Foreign Trade.";
+    banner_subtitle_3.textContent = "We connect your company to the world with efficiency, agility and confidence.";
     banner_button_3.textContent = "Check out our solutions";
 
     //About
