@@ -186,7 +186,7 @@ function setLanguage(language) {
     service_customs.textContent = "Despacho Aduaneiro";
     service_description.textContent = "Selecione um serviço para ver a descrição.";
 
-      services = {
+    services = {
       consulting: "Consultoria é o serviço oferecido por profissionais especializados que fornecem orientações e soluções personalizadas para empresas ou indivíduos em áreas específicas, como negócios, estratégia, finanças, marketing, entre outras. O objetivo é ajudar a otimizar processos, melhorar o desempenho e tomar decisões mais assertivas, levando em consideração as necessidades e objetivos do cliente.",
       import: "Importação é o processo de trazer produtos ou serviços de outro país para o mercado local. Esse processo envolve a negociação com fornecedores internacionais, o cumprimento de regulamentações legais e fiscais, e o transporte de mercadorias através das fronteiras. A importação pode ser realizada por empresas de diferentes setores que buscam acesso a novos produtos ou materiais para seus negócios.",
       export: "Exportação é a ação de enviar produtos ou serviços para outros países, visando expandir o alcance do mercado e aumentar a competitividade internacional. O processo de exportação envolve a adaptação de produtos às exigências dos mercados externos, além da documentação e logística necessárias para garantir a entrega segura e eficiente.",
@@ -210,7 +210,7 @@ function setLanguage(language) {
     footer_title_3.textContent = "Contato Financeiro";
     footer_subtitle_3.textContent = "Telefone";
     copyright_txt.textContent = "© 2024 - Fast Trading - Todos os direitos reservados.";
-    
+
 
 
 
@@ -218,7 +218,7 @@ function setLanguage(language) {
   } else if (language === 'English') {
 
     //Navbar
-    companies_nav.textContent = " Companises";
+    companies_nav.textContent = " company";
     services_nav.textContent = "Services";
     contact_nav.textContent = "Contact";
 
@@ -250,7 +250,7 @@ function setLanguage(language) {
     service_customs.textContent = "Customs Clearance";
     service_description.textContent = "Select a service to see the description.";
 
-     services = {
+    services = {
 
       consulting: "Consultancy is the service offered by specialized professionals who provide personalized guidance and solutions to companies or individuals in specific areas, such as business, strategy, finance, marketing, among others. The objective is to help improve processes, improve performance and take more assertive, taking into account the client's needs and objectives.",
 
@@ -270,14 +270,13 @@ function setLanguage(language) {
     why_choose_us_card_5.textContent = "Understanding taxes";
 
     //Footer Contact
-        //Footer Contact
-        footer_title_1.textContent = "Contact Information";
-        footer_subtitle_1.textContent = "Address";
-        footer_title_2.textContent = "Business Contact";
-        footer_subtitle_2.textContent = "Phone";
-        footer_title_3.textContent = "Financial Contact";
-        footer_subtitle_3.textContent = "Phone";
-        copyright_txt.textContent = "© 2024 - Fast Trading - All rights reserved.";
+    footer_title_1.textContent = "Contact Information";
+    footer_subtitle_1.textContent = "Address";
+    footer_title_2.textContent = "Business Contact";
+    footer_subtitle_2.textContent = "Phone";
+    footer_title_3.textContent = "Financial Contact";
+    footer_subtitle_3.textContent = "Phone";
+    copyright_txt.textContent = "© 2024 - Fast Trading - All rights reserved.";
 
 
 
