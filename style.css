@@ -995,6 +995,18 @@ nav .logo img {
         font-size: 1.3rem;
     }
 
+    .arrow{
+        background: none;
+        box-shadow: none;
+    }
+
+    .arrow.left{
+        left: 0px;
+    }
+    .arrow.right{
+        right: 0px;
+    }
+
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
