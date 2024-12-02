@@ -233,18 +233,18 @@ function setLanguage(language) {
   } else if (language === 'English') {
 
     //Navbar
-    companies_nav.textContent = " company";
+    companies_nav.textContent = "Company";
     services_nav.textContent = "Services";
-    contact_nav.textContent = "Contact";
+    contact_nav.textContent = "Contact us";
 
     //Banner pag 1
-    banner_title_1.textContent = "Speed ​​and Reliability in Ideal Proportion.";
+    banner_title_1.textContent = "Speed ​​and Reliability in the Ideal Proportion.";
     banner_subtitle_1.textContent = "We offer the perfect solution for your operation.";
     banner_button_1.textContent = "Request a quote";
 
     //Banner pag 2
     banner_title_2.textContent = "Modern Equipment for Your Needs.";
-    banner_subtitle_2.textContent = "ncrease productivity with advanced technology.";
+    banner_subtitle_2.textContent = "Increase productivity with advanced technology.";
     banner_button_2.textContent = "Learn more";
 
     //Banner pag 3
@@ -269,7 +269,7 @@ function setLanguage(language) {
 
       consulting: "Consultancy is the service offered by specialized professionals who provide personalized guidance and solutions to companies or individuals in specific areas, such as business, strategy, finance, marketing, among others. The objective is to help improve processes, improve performance and take more assertive, taking into account the client's needs and objectives.",
 
-      import: "Importation is the process of bringing products or services from another country to the local market. This process involves negotiating with international suppliers, complying with legal and tax regulations, and transporting goods across borders. Importation can be carried out by companies from different sectors seeking access to new products or materials for their businesses.",
+      import: "Importat is the process of bringing products or services from another country to the local market. This process involves negotiating with international suppliers, complying with legal and tax regulations, and transporting goods across borders. Importation can be carried out by companies from different sectors seeking access to new products or materials for their businesses.",
 
       export: "Export is the action of sending products or services to other countries, aiming to expand market reach and increase international competitiveness. The export process involves adapting products to the requirements of foreign markets, in addition to the documentation and logistics necessary to ensure safe and efficient delivery.",
 
@@ -281,7 +281,7 @@ function setLanguage(language) {
     why_choose_us_card_1.textContent = "Cost Optimization";
     why_choose_us_card_2.textContent = "Consulting";
     why_choose_us_card_3.textContent = "ISO 9001";
-    why_choose_us_card_4.textContent = "Large green channel parameterization index";
+    why_choose_us_card_4.textContent = "High green channel clearance rate";
     why_choose_us_card_5.textContent = "Understanding taxes";
 
     //Footer Contact
