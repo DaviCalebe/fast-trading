@@ -557,10 +557,10 @@ nav .logo img {
 .advantages {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
-
+    width: 100%;
 }
 
 
