@@ -127,7 +127,6 @@ const service_description = document.getElementById('service_description');
 const why_choose_us_title = document.getElementById('why_choose_us_title');
 const why_choose_us_card_1 = document.getElementById('why_choose_us_card_1');
 const why_choose_us_card_2 = document.getElementById('why_choose_us_card_2');
-const why_choose_us_card_3 = document.getElementById('why_choose_us_card_3');
 const why_choose_us_card_4 = document.getElementById('why_choose_us_card_4');
 const why_choose_us_card_5 = document.getElementById('why_choose_us_card_5');
 
@@ -212,7 +211,6 @@ function setLanguage(language) {
     why_choose_us_title.textContent = "Por que a Fast é a melhor escolha?";
     why_choose_us_card_1.textContent = "Otimização de Custo";
     why_choose_us_card_2.textContent = "Consultoria";
-    why_choose_us_card_3.textContent = "ISO 9001";
     why_choose_us_card_4.textContent = "Grande índice de parametrização de canal verde";
     why_choose_us_card_5.textContent = "Entendimento de tributos";
 
@@ -280,7 +278,6 @@ function setLanguage(language) {
     why_choose_us_title.textContent = "Why is Fast the best choice?";
     why_choose_us_card_1.textContent = "Cost Optimization";
     why_choose_us_card_2.textContent = "Consulting";
-    why_choose_us_card_3.textContent = "ISO 9001";
     why_choose_us_card_4.textContent = "High green channel clearance rate";
     why_choose_us_card_5.textContent = "Understanding taxes";
 
