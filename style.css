@@ -743,6 +743,7 @@ nav .logo img {
     font-weight: 350;
     display: block;
     transition: all 0.3s ease;
+    word-wrap: break-word;
 }
 
 .footer-col ul li a:hover {
